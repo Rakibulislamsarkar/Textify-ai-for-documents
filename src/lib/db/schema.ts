@@ -1,4 +1,3 @@
-import { create } from 'domain';
 import { integer, pgEnum, pgTable, serial, text, timestamp, varchar} from 'drizzle-orm/pg-core';
 
 
