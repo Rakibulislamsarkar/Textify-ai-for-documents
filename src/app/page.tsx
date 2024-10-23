@@ -16,52 +16,55 @@ export default async function Home() {
 
   return (
     <>
-    <nav className='sticky h-auto p-2 inset-x-0 top-0 z-30 w-full bg-slate-200/40 backdrop-blur-lg drop-shadow-lg transition-all'>
+      <nav className="sticky h-auto p-2 inset-x-0 top-0 z-30 w-full bg-slate-200/40 backdrop-blur-lg drop-shadow-lg transition-all">
         <MaxWidthWrapper>
-            <div className="items-center justify-center max-w-[1200px] w-full mx-auto px-4">
+          <div className="items-center justify-center max-w-[1200px] w-full mx-auto px-4">
             <div className="flex text-black justify-between items-center">
-          {/* Logo */}
-          <Link href='/' className="flex gap-2 justify-center items-center">
-            <img
-              src="/textify(Black).png"
-              alt="Logo Black"
-              className="w-[2rem] h-auto"
-            />
-            <span className="hidden md:block">Textify</span>
-          </Link>
+              {/* Logo */}
+              <Link href="/" className="flex gap-2 justify-center items-center">
+                <img
+                  src="/textify(Black).png"
+                  alt="Logo Black"
+                  className="w-[2rem] h-auto"
+                />
+                <span className="hidden md:block">Textify</span>
+              </Link>
 
-          {/* Right Section - Avatar */}
-          <div className='flex gap-2'>
-          <>
-                <Link
-                  href='/pricing'
-                  className={buttonVariants({
-                    variant: 'ghost',
-                    size: 'lg',
-                  })}>
-                  Pricing
-                </Link>
-                <Link
-                  href='/sign-in'
-                  className={buttonVariants({
-                    variant: 'ghost',
-                    size: 'lg',
-                  })}>
-                  Sign-in
-                </Link>
-                <Link
-                  href='/sign-up'
-                  className={buttonVariants({
-                    size: 'lg',
-                  })}>
-                  Get Started
-                </Link>
-              </>
+              {/* Right Section - Avatar */}
+              <div className="flex gap-2">
+                <>
+                  <Link
+                    href="/pricing"
+                    className={buttonVariants({
+                      variant: "ghost",
+                      size: "lg",
+                    })}
+                  >
+                    Pricing
+                  </Link>
+                  <Link
+                    href="/sign-in"
+                    className={buttonVariants({
+                      variant: "ghost",
+                      size: "lg",
+                    })}
+                  >
+                    Sign-in
+                  </Link>
+                  <Link
+                    href="/sign-up"
+                    className={buttonVariants({
+                      size: "lg",
+                    })}
+                  >
+                    Get Started
+                  </Link>
+                </>
+              </div>
             </div>
           </div>
-        </div>
         </MaxWidthWrapper>
-    </nav>
+      </nav>
       <MaxWidthWrapper className="mb-6 mt-10 sm:mt-20 flex flex-col items-center justify-center text-center">
         <div className="mx-auto mb-4 flex max-w-fit items-center justify-center space-x-2 overflow-hidden rounded-full border border-gray-200 bg-white px-7 py-2 shadow-md backdrop-blur transition-all hover:border-gray-300 hover:bg-white/50">
           <p className="text-sm font-semibold text-gray-700">
@@ -74,10 +77,8 @@ export default async function Home() {
         </h1>
 
         <div className="flex gap-6 md:gap-10 mt-5">
-          <Link
-            href="/sign-up"
-          >
-            <Button className="bg-slate-900  text-white px-6 py-4 flex items-center justify-center hover:bg-slate-800 hover:text-white">
+          <Link href="/sign-up">
+            <Button className="bg-slate-950  text-white px-6 py-5 flex items-center justify-center hover:bg-slate-800 hover:text-white">
               Get Started <MdArrowOutward className="ml-3" />
             </Button>
           </Link>
